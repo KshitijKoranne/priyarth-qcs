@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Priyarth QCS - Pharmaceutical Quality & Compliance Services
 
-## Getting Started
+A modern, professional website for Priyarth QCS, built with Next.js 15, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🌟 Features
+
+- **Modern Tech Stack**: Next.js 15 (App Router), TypeScript, Tailwind CSS
+- **Responsive Design**: Mobile-first design that works beautifully on all devices
+- **SEO Optimized**: Meta tags, Open Graph, and structured data for better search visibility
+- **PWA Ready**: Includes manifest for Progressive Web App support
+- **Smooth Animations**: Framer Motion for elegant page transitions
+- **Clean UI**: Professional pharmaceutical industry design with blue, white, and grey tones
+
+## 📄 Pages
+
+- **Home**: Hero section with company tagline and service highlights
+- **About**: Mission statement, expertise overview, regulatory standards, and company values
+- **Services**: Comprehensive list of all services with detailed descriptions
+- **Contact**: Contact form with business information
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## 📦 Deployment to Vercel
 
-To learn more about Next.js, take a look at the following resources:
+This project is optimized for deployment on Vercel:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push your code to GitHub
+2. Import the project in Vercel
+3. Vercel will auto-detect Next.js and configure the build settings
+4. Deploy!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Alternatively, use the Vercel CLI:
 
-## Deploy on Vercel
+```bash
+npm install -g vercel
+vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Colors
+
+Primary colors are defined in `tailwind.config.ts`. You can customize the blue color scheme:
+
+```typescript
+colors: {
+  primary: {
+    // Modify these values
+  }
+}
+```
+
+### Content
+
+- Edit page content in `app/*/page.tsx` files
+- Update contact information in `components/Footer.tsx` and `app/contact/page.tsx`
+- Modify services in `app/services/page.tsx`
+
+### SEO
+
+- Update global metadata in `app/layout.tsx`
+- Modify structured data in `components/StructuredData.tsx`
+- Update PWA manifest in `public/manifest.json`
+
+## 📧 Contact Information
+
+- Email: info@priyarthqcs.com
+- Update business address in `app/contact/page.tsx`
+
+## 🔧 Technologies Used
+
+- [Next.js 15](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Lucide React](https://lucide.dev/) - Icons
+
+## 📝 License
+
+Copyright © 2025 Priyarth QCS. All rights reserved.
+
+## 🤝 Support
+
+For support or inquiries, contact info@priyarthqcs.com
