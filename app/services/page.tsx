@@ -133,8 +133,9 @@ export default function ServicesPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-accent-600 to-accent-800 text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -166,29 +167,29 @@ export default function ServicesPage() {
                 <div className="max-w-5xl mx-auto">
                   <div className="flex items-start gap-6 mb-8">
                     <div className="flex-shrink-0">
-                      <div className="p-4 bg-accent-100 rounded-xl">
-                        <service.icon className="h-10 w-10 text-accent-600" />
+                      <div className="p-4 bg-primary-100 rounded-xl">
+                        <service.icon className="h-10 w-10 text-primary-700" />
                       </div>
                     </div>
                     <div>
-                      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                      <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-4">
                         {service.title}
                       </h2>
-                      <p className="text-lg text-gray-700 leading-relaxed">
+                      <p className="text-lg text-secondary-700 leading-relaxed">
                         {service.description}
                       </p>
                     </div>
                   </div>
 
-                  <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-6">
+                  <div className="bg-secondary-50 rounded-xl p-8 border-2 border-secondary-200 hover:border-primary-300 transition-colors">
+                    <h3 className="text-xl font-semibold text-secondary-900 mb-6">
                       What We Offer:
                     </h3>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {service.services.map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <CheckCircle className="h-6 w-6 text-accent-600 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{item}</span>
+                          <CheckCircle className="h-6 w-6 text-primary-700 flex-shrink-0 mt-0.5" />
+                          <span className="text-secondary-700">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -201,8 +202,9 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-accent-600 via-accent-700 to-primary-600">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gradient-to-r from-primary-700 via-primary-800 to-primary-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -213,12 +215,12 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Need a Custom Solution?
             </h2>
-            <p className="text-lg mb-8 text-accent-100">
+            <p className="text-lg mb-8 text-primary-100">
               We understand that every organization has unique needs. Contact us to discuss how we can tailor our services to meet your specific requirements.
             </p>
             <a
               href="/contact"
-              className="inline-block bg-white text-accent-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-50 hover:text-primary-700 transition-colors shadow-lg"
+              className="inline-block bg-accent-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Get in Touch
             </a>

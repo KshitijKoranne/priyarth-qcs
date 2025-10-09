@@ -8,8 +8,9 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-accent-600 to-accent-800 text-white py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,15 +35,15 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-6 text-center">
               Our Mission
             </h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-secondary-700 mb-6 leading-relaxed">
               Priyarth QCS is dedicated to advancing quality assurance and regulatory compliance standards
               in the pharmaceutical industry. We provide comprehensive solutions that ensure our clients meet
               the highest standards of quality, safety, and efficacy in pharmaceutical manufacturing and operations.
             </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg text-secondary-700 mb-6 leading-relaxed">
               With deep expertise in Good Manufacturing Practices (GMP), quality systems, and regulatory requirements,
               we empower pharmaceutical companies to build robust compliance frameworks, maintain operational excellence,
               and achieve sustainable growth in an increasingly regulated environment.
@@ -52,7 +53,7 @@ export default function AboutPage() {
       </section>
 
       {/* Expertise Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-secondary-50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0 }}
@@ -61,10 +62,10 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-8 text-center">
               Our Expertise
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700">
+            <div className="prose prose-lg max-w-none text-secondary-700">
               <p className="mb-6 leading-relaxed">
                 Priyarth QCS offers end-to-end support across the pharmaceutical product lifecycle,
                 from initial development through manufacturing, quality control, and regulatory compliance.
@@ -93,31 +94,31 @@ export default function AboutPage() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-8 text-center">
               Regulatory Standards We Serve
             </h2>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+            <p className="text-lg text-secondary-700 mb-8 leading-relaxed text-center">
               We provide expert guidance and support for compliance with major global regulatory authorities:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="bg-accent-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-accent-700">FDA</h3>
-                <p className="text-sm text-gray-600 mt-2">United States</p>
+              <div className="bg-primary-50 rounded-lg p-6 border-2 border-primary-100 hover:border-primary-300 transition-colors">
+                <h3 className="text-xl font-bold text-primary-800">FDA</h3>
+                <p className="text-sm text-secondary-600 mt-2">United States</p>
               </div>
-              <div className="bg-accent-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-accent-700">MHRA</h3>
-                <p className="text-sm text-gray-600 mt-2">United Kingdom</p>
+              <div className="bg-primary-50 rounded-lg p-6 border-2 border-primary-100 hover:border-primary-300 transition-colors">
+                <h3 className="text-xl font-bold text-primary-800">MHRA</h3>
+                <p className="text-sm text-secondary-600 mt-2">United Kingdom</p>
               </div>
-              <div className="bg-accent-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-accent-700">ANVISA</h3>
-                <p className="text-sm text-gray-600 mt-2">Brazil</p>
+              <div className="bg-primary-50 rounded-lg p-6 border-2 border-primary-100 hover:border-primary-300 transition-colors">
+                <h3 className="text-xl font-bold text-primary-800">ANVISA</h3>
+                <p className="text-sm text-secondary-600 mt-2">Brazil</p>
               </div>
-              <div className="bg-accent-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-accent-700">EDQM</h3>
-                <p className="text-sm text-gray-600 mt-2">Europe</p>
+              <div className="bg-primary-50 rounded-lg p-6 border-2 border-primary-100 hover:border-primary-300 transition-colors">
+                <h3 className="text-xl font-bold text-primary-800">EDQM</h3>
+                <p className="text-sm text-secondary-600 mt-2">Europe</p>
               </div>
             </div>
-            <p className="text-lg text-gray-700 mt-8 leading-relaxed text-center">
+            <p className="text-lg text-secondary-700 mt-8 leading-relaxed text-center">
               Our team ensures your operations meet the stringent requirements of these authorities,
               facilitating smooth product approvals and market access worldwide.
             </p>
@@ -126,8 +127,9 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 bg-gradient-to-r from-accent-600 via-accent-700 to-primary-600 text-white">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-gradient-to-r from-primary-700 via-primary-800 to-primary-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjA1IiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -137,33 +139,51 @@ export default function AboutPage() {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Our Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-4">
+              <motion.div
+                className="text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-600 rounded-full mb-4">
                   <Award className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Quality</h3>
                 <p className="text-primary-100">
                   Uncompromising commitment to excellence in every aspect of pharmaceutical quality management
                 </p>
-              </div>
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-4">
+              </motion.div>
+              <motion.div
+                className="text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-600 rounded-full mb-4">
                   <Shield className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Integrity</h3>
                 <p className="text-primary-100">
                   Ethical practices, transparency, and honest guidance in all client relationships
                 </p>
-              </div>
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-4">
+              </motion.div>
+              <motion.div
+                className="text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-600 rounded-full mb-4">
                   <Target className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Compliance</h3>
                 <p className="text-primary-100">
                   Deep expertise in global regulatory requirements ensuring full adherence to standards
                 </p>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>

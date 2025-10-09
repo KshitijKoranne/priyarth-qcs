@@ -26,7 +26,7 @@ export default function Header() {
               width={250}
               height={75}
               priority
-              className="h-16 w-auto"
+              className="h-12 w-auto md:h-16"
             />
           </Link>
 
@@ -36,7 +36,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-accent-600 transition-colors font-medium"
+                className="text-secondary-900 hover:text-primary-800 transition-colors font-medium"
               >
                 {link.label}
               </Link>
@@ -50,9 +50,9 @@ export default function Header() {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-700" />
+              <X className="h-6 w-6 text-secondary-900" />
             ) : (
-              <Menu className="h-6 w-6 text-gray-700" />
+              <Menu className="h-6 w-6 text-secondary-900" />
             )}
           </button>
         </div>
@@ -64,7 +64,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-gray-700 hover:text-accent-600 transition-colors"
+                className="block py-2 text-secondary-900 hover:text-primary-800 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
